@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class LeapYear {
+
+    public static void main(String[] args) {
+        // The desired year to check.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the year to check: ");
+        int year = scanner.nextInt();
+
+        // Implementing our algorithm.
+        if (year % 400 == 0) {
+            System.out.println(year + " is a leap year.");
+        }
+        else if (year % 100 == 0) {
+            System.out.println(year + " is not a leap year.");
+        }
+        else if (year % 4 == 0) {
+            System.out.println(year + " is a leap year.");
+        }
+        else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+}
+
+import java.math.BigDecimal; 
+    import java.util.Scanner; 
+     
+    public class TriangleArea { 
+     
+    	public TriangleArea() { 
+    	} 
+    	 
+    	public static BigDecimal computeTriangleArea(BigDecimal base, BigDecimal height) { 
+    		return base.multiply(height).divide(BigDecimal.valueOf(2)); 
+    	} 
+     
+    	public static void main(String[] args) { 
+    		 
+    		Scanner scanner = new Scanner(System.in); 
+    		 
+    		System.out.println("Please enter Triangle Base: "); 
+    		BigDecimal base = scanner.nextBigDecimal(); 
+    		System.out.println("Please enter Triangle Height: "); 
+    		BigDecimal height = scanner.nextBigDecimal(); 
+    		BigDecimal area = computeTriangleArea(base, height);	 
+    		System.out.println("Triangle area: "+area); 
+    		scanner.close(); 
+     
+    	} 
+     
+    } 
+
